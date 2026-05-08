@@ -1,8 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ font-family: "Bungee", sans-serif;
+}
+
+
+
 .title-box{
-    background-color: rgb(103, 122, 172);
+    background: linear-gradient(135deg, #ff0000, #f74b4b);
+    text-align: center;
 }
 
 .title-box h1{
-text-align: center;
+padding: 20px;
+color: rgb(0, 0, 0);
 }
 
+.high-score{
+    padding: 30px;
+}
+
+.button {
+    display:flex;
+    justify-content: center;
+    padding: 20px; 
+    
+    
+
+}
