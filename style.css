@@ -10,7 +10,7 @@ body{
 
 
 .title-box{
-    background: linear-gradient(135deg, #ff0000, #f74b4b);
+    /* background: linear-gradient(135deg, #dba6a6, #ffc1c1); */
     text-align: center;
 }
 
@@ -31,3 +31,13 @@ color: rgb(0, 0, 0);
     
 
 }
+
+.top-buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 15px 15px;
+}
+ .top-buttons button{
+    padding: 8px;
+ }
+
