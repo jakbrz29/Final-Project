@@ -20,16 +20,13 @@ color: rgb(0, 0, 0);
 }
 
 .high-score{
-    padding: 30px;
+    padding: 12px;
 }
 
-.button {
+.mini-buttons {
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 20px; 
-    
-    
-
 }
 
 .top-buttons{
@@ -37,7 +34,20 @@ color: rgb(0, 0, 0);
     justify-content: space-between;
     padding: 15px 15px 15px 15px;
 }
+
  .top-buttons button{
     padding: 8px;
  }
 
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.multiple-choice{
+    border-radius: 4px;
+    padding: 12px;
+
+}
