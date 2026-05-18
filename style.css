@@ -1,43 +1,154 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
- font-family: "Bungee", sans-serif;
-}
 
-
-
-.title-box{
-    /* background: linear-gradient(135deg, #dba6a6, #ffc1c1); */
-    text-align: center;
-}
-
-.title-box h1{
-padding: 20px;
-color: rgb(0, 0, 0);
-}
-
-.high-score{
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #6e6e6e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 30px;
 }
 
-.button {
-    display:flex;
-    justify-content: center;
-    padding: 20px; 
-    
-    
 
-}
 
-.top-buttons{
+.title-box {
+    width: 90%;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     display: flex;
     justify-content: space-between;
-    padding: 15px 15px 15px 15px;
+    align-items: center;
+    gap: 20px;
 }
- .top-buttons button{
-    padding: 8px;
- }
 
+
+.top-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3b82f6;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.top-buttons button:hover {
+    background-color: #2563eb;
+}
+
+
+.title {
+    text-align: center;
+    flex: 1;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.title p {
+    color: #666;
+    margin-top: 5px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logo-title img {
+    width: 60px;
+    height: 60px;
+}
+
+
+.high-score {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 120px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.card {
+    margin-top: 40px;
+    background-color: white;
+    width: 90%;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 25px;
+}
+
+
+.multiple-choice {
+    width: 150px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e5e7eb;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.multiple-choice:hover {
+    background-color: #d1d5db;
+}
+
+/* Put the 4 buttons in a row */
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Guess button container */
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #223bc5;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button button:hover {
+    background-color: #098297;
+}
