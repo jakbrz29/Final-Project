@@ -8,13 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<div id="howToPlaySidebar" class="sidebar">
+    <button class="close-btn">&times;</button>
+    <h2>How 2 Play</h2>
+    <p>Click Start to begin.</p>
+    <p>A silhouette of a Gen 1 Pokémon appears.</p>
+    <p>Choose the correct Pokémon from the 4 buttons.</p>
+    <p>Correct answer = +1 score.</p>
+</div>
+
+
+<div id="settingsSidebar" class="sidebar">
+    <button class="close-btn">&times;</button>
+    <h2>Settings</h2>
+    <p>More settings coming soon.</p>
+</div>
 <body>
 
 
     <div class="title-box">
         <div class="top-buttons">
-        <button>How 2 Play</button>
-        <button>Settings</button>
+            <button class="how-btn">How 2 Play</button>
+            <button class="settings-btn">Settings</button>
     </div>
         <div class="title">
             <div class="logo-title">
@@ -28,19 +43,20 @@
             <p>High Score:</p>
         </div>
     </div>
+    <img id="pokemon-image" src="" alt="Pokemon silhouette">
     <div class="card">
-        <button class="multiple-choice">Placeholder</button>
-        <button class="multiple-choice">Placeholder</button>
-        <button class="multiple-choice">Placeholder</button>
-        <button class="multiple-choice">Placeholder</button>
+        <button class="multiple-choice"></button>
+        <button class="multiple-choice"></button>
+        <button class="multiple-choice"></button>
+        <button class="multiple-choice"></button>
         
         <div class="button">
             <button>
                 Guess
             </button>
-            <button>
-                Start
-            </button>
+        <button id="start-btn">
+            Start
+        </button>
         </div>
     </div>
     <script src="script.js"></script>
