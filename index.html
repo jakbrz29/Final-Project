@@ -21,7 +21,19 @@
 <div id="settingsSidebar" class="sidebar">
     <button class="close-btn">&times;</button>
     <h2>Settings</h2>
-    <p>More settings coming soon.</p>
+    <h3>Timer Length</h3>
+
+        <button id="timer15">15 Seconds</button>
+        <button id="timer30">30 Seconds</button>
+        <button id="timer60">60 Seconds</button>
+
+    <hr>
+
+    <h3>Statistics</h3>
+
+        <button id="resetStats">
+            Clear Statistics
+        </button>
 </div>
 <body>
 
@@ -61,7 +73,35 @@
         </button>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    
+    <footer class="stats-footer">
+    <div class="stat">
+        <span id="games-played">0</span>
+        <p>Games Played</p>
+    </div>
+
+    <div class="stat">
+        <span id="correct-answers">0</span>
+        <p>Correct</p>
+    </div>
+
+    <div class="stat">
+        <span id="wrong-answers">0</span>
+        <p>Wrong</p>
+    </div>
+
+    <div class="stat">
+        <span id="accuracy">0%</span>
+        <p>Accuracy</p>
+    </div>
+
+    <div class="stat">
+        <span id="best-streak">0</span>
+        <p>Best Streak</p>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 
 </html>
