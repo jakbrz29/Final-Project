@@ -8,45 +8,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<div id="howToPlaySidebar" class="sidebar">
+    <button class="close-btn">&times;</button>
+    <h2>How 2 Play</h2>
+    <p>Click Start to begin.</p>
+    <p>A silhouette of a Gen 1 Pokémon appears.</p>
+    <p>Choose the correct Pokémon from the 4 buttons.</p>
+    <p>Correct answer = +1 score.</p>
+</div>
+
+
+<div id="settingsSidebar" class="sidebar">
+    <button class="close-btn">&times;</button>
+    <h2>Settings</h2>
+    <p>More settings coming soon.</p>
+</div>
 <body>
-    <div class="top-buttons">
-        <button>How 2 Play</button>
-        <button>Settings</button>
+
+
+    <div class="title-box">
+        <div class="top-buttons">
+            <button class="how-btn">How 2 Play</button>
+            <button class="settings-btn">Settings</button>
     </div>
-
-
-    <div class="container">
-        <div class="title-box">
-            <div class="title">
-                <h1>MysteryMon</h1>
-                <p>Test Your Pokemon Knowledge!</p>
+        <div class="title">
+            <div class="logo-title">
+            <img src="purepng.com-pokeballpokeballdevicepokemon-ballpokemon-capture-ball-17015278258617bdog.png" alt="Ball">
+            <h1>MysteryMon</h1>
+            <img src="OIP.webp" alt="chu">
             </div>
-            <div class="high-score">
-                <p>High Score:</p>
-            </div>
+            <p>Test Your Pokemon Knowledge!</p>
         </div>
-        <div class="card">
-
-            <img src="pokemon" alt="Pokemon Sprite">
-
-            <button class="multiple-choice"></button>
-            <button class="multiple-choice"></button>
-            <button class="multiple-choice"></button>
-            <button class="multiple-choice"></button>
-
-            <button class="start-button">
-                Start
-            </button>
-            <button class="mini-buttons">
-                Guess
-            </button>
-            <button class="mini-buttons">
-                Next
-            </button>
-
+        <div class="high-score">
+            <p>High Score:</p>
         </div>
     </div>
-
+    <img id="pokemon-image" src="questionmark.png" alt="Pokemon silhouette">
+    <p id="result-text"></p>
+    <div class="card">
+        <button class="multiple-choice"></button>
+        <button class="multiple-choice"></button>
+        <button class="multiple-choice"></button>
+        <button class="multiple-choice"></button>
+        
+        <div class="button">
+        <button id="start-btn">
+            Start
+        </button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
