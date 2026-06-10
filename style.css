@@ -211,3 +211,15 @@ body {
     color: rgb(164, 10, 10);
 }
 
+.score-container {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 140px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.score-container p {
+    margin: 5px 0;
+}
