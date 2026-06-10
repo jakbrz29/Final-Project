@@ -50,9 +50,6 @@ const bestStreakDisplay = document.getElementById("best-streak");
 // ==========================
 
 let score = 0;
-let highScore =
-    parseInt(localStorage.getItem("highScore")) || 0;
-
 let correctPokemon = "";
 let gameStarted = false;
 let roundAnswered = false;
@@ -131,7 +128,6 @@ resetStatsBtn.addEventListener("click", () => {
 
 startBtn.addEventListener("click", () => {
     if (!gameStarted) {
-
         gameStarted = true;
 
         score = 0;
@@ -260,10 +256,6 @@ function checkAnswer(answer) {
 
     image.style.filter = "brightness(1)";
 
-    if (roundAnswered) return;
-
-    roundAnswered = true;
-
     if (answer === correctPokemon) {
         score++;
         stats.correct++;
@@ -287,15 +279,6 @@ function checkAnswer(answer) {
 
         resultText.textContent = "Wrong!";
         resultText.className = "incorrect";
-
-        image.style.filter = "brightness(1)";
-
-        stats.wrong++;
-
-        currentStreak = 0;
-
-        saveStats();
-        updateStatsDisplay();
     }
 
     saveStats();
