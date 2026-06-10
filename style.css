@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #6e6e6e;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,7 +97,7 @@ body {
     max-width: 900px;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.7);
 
     display: flex;
     /* flex-direction: column; */
@@ -162,7 +162,7 @@ body {
     width: 300px;
     height: 100%;
     background: white;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    box-shadow: 2px 0 10px rgba(0,0,0,0.7);
     padding: 25px;
     transition: 0.3s;
     z-index: 1000;
@@ -211,3 +211,223 @@ body {
     color: rgb(164, 10, 10);
 }
 
+.score-container {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 140px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.score-container p {
+    margin: 5px 0;
+}
+
+.stats-footer {
+    margin-top: 40px;
+    width: 90%;
+    max-width: 900px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat span {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #223bc5;
+}
+
+.stat p {
+    color: #666;
+    margin-top: 5px;
+}
+
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.sidebar h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #444;
+    font-size: 1rem;
+}
+
+.sidebar hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.sidebar button:not(.close-btn) {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #3b82f6;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sidebar button:not(.close-btn):hover {
+    transform: translateY(-2px);
+    background-color: #2563eb;
+}
+
+.sidebar button:not(.close-btn):active {
+    transform: translateY(0);
+}
+
+#resetStats {
+    background-color: #dc2626;
+}
+
+#resetStats:hover {
+    background-color: #b91c1c;
+}
+
+#currentTimer {
+    font-weight: bold;
+    color: #223bc5;
+}
+
+.sidebar p {
+    color: #666;
+    margin-bottom: 10px;
+}
+/* RESPONSIVE DESIGN */
+
+/*  MOBILE  */
+@media (max-width: 480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .title-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo-title img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .title h1 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .multiple-choice {
+        width: 100%;
+    }
+
+    #pokemon-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .stats-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .score-container {
+        min-width: auto;
+    }
+}
+
+/*  TABLET */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .title-box {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .multiple-choice {
+        width: 45%;
+    }
+
+    #pokemon-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .stats-footer {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+/*  SMALL LAPTOP  */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .card {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .multiple-choice {
+        width: 40%;
+    }
+
+    .title-box {
+        flex-direction: row;
+    }
+}
+
+/*  DESKTOP */
+@media (min-width: 1025px) {
+
+    .card {
+        max-width: 1000px;
+        margin: 40px auto;
+    }
+
+    .title-box {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .stats-footer {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
