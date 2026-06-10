@@ -435,12 +435,6 @@ let currentStreak = 0;
 
 function updateStatsDisplay() {
 
-    console.log(gamesPlayedDisplay);
-    console.log(correctDisplay);
-    console.log(wrongDisplay);
-    console.log(accuracyDisplay);
-    console.log(bestStreakDisplay);
-
     if (!gamesPlayedDisplay ||
         !correctDisplay ||
         !wrongDisplay ||
